@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditUserProfile">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="171dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/viewPID"
+        android:layout_width="326dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:hint="P1980"
+        android:textAlignment="center"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/viewMobile"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="48dp"
+        android:hint="01675977369"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPID" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="399dp"
+        android:layout_height="412dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="58dp"
+        android:background="@color/Gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="20dp"
+            android:text="Gender"
+            android:textSize="19dp" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="54dp"
+            android:background="@color/white"
+            android:hint="Male"
+            android:textColor="@color/colorPrimaryDark2"
+            android:textSize="21dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="105dp"
+            android:text="Emargency Number-1"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/editEmargencyNumber_1"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/editName"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="39dp"
+            android:background="@color/white"
+            android:hint="0177318833"
+            android:textColor="@color/colorPrimaryDark2"
+            android:textSize="21dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="189dp"
+            android:text="Emargency Number-2"
+            android:textSize="18dp" />
+
+
+        <EditText
+            android:id="@+id/editEmargencyNumber_2"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textView24"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="19dp"
+            android:background="@color/white"
+            android:hint="01800000000"
+            android:textColor="@color/colorPrimaryDark2"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editEmargencyNumber_2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp"
+            android:text="Address"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/editAddress"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/editEmargencyNumber_2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="42dp"
+            android:background="@color/white"
+            android:hint="address"
+            android:textColor="@color/colorPrimaryDark2"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="198dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="SAVE"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+
+
+</android.support.constraint.ConstraintLayout>

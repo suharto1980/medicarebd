@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Current_medi_info">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="411dp"
+        android:layout_height="126dp"
+        android:layout_marginBottom="51dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428">
+
+
+        <TextView
+            android:id="@+id/ViewpName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="8dp"
+            android:text="Suharto Das"
+
+            android:textColor="@color/textcolor"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="52dp"
+            android:text="Age:"
+
+            android:textColor="@color/textcolor"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/ViewAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="89dp"
+            android:layout_marginTop="52dp"
+            android:text="22"
+
+            android:textColor="@color/textcolor"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/view10"
+        android:layout_width="57dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
+        android:text="BP :"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3" />
+
+    <EditText
+        android:id="@+id/inputBp"
+        android:layout_width="208dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.621"
+        app:layout_constraintStart_toEndOf="@+id/view10"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3" />
+
+
+    <TextView
+        android:id="@+id/view11"
+        android:layout_width="93dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:text="Weight :"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view10" />
+
+    <EditText
+        android:id="@+id/inputWeight"
+        android:layout_width="212dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputBp" />
+
+
+    <TextView
+        android:id="@+id/view13"
+        android:layout_width="93dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:text="Heigth :"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view11" />
+
+    <EditText
+        android:id="@+id/inputHeigth"
+        android:layout_width="215dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toEndOf="@+id/view13"
+        app:layout_constraintTop_toBottomOf="@+id/inputWeight" />
+
+
+    <TextView
+        android:id="@+id/view14"
+        android:layout_width="77dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:text="BMI :"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view13" />
+
+    <TextView
+        android:id="@+id/textViewBmi"
+        android:layout_width="251dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:text="32"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/view14"
+        app:layout_constraintTop_toBottomOf="@+id/inputHeigth" />
+
+
+    <TextView
+        android:id="@+id/view12"
+        android:layout_width="89dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:text="BMR :"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view14" />
+
+    <TextView
+        android:id="@+id/textViewBmr"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="148dp"
+        android:text="32"
+        android:textSize="25dp"
+        app:layout_constraintStart_toEndOf="@+id/view12"
+        app:layout_constraintTop_toBottomOf="@+id/inputWeight" />
+
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="376dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/buttonshape"
+        android:backgroundTint="@color/textcolor"
+        android:text="SUBMIT"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBmr" />
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

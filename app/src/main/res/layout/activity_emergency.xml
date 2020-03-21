@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#283747"
+    tools:context=".Emergency">
+
+
+    <EditText
+        android:id="@+id/EmargencyNumber_1"
+        android:layout_width="261dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="8dp"
+        android:hint="Phone Number"
+        android:textColorHint="@color/white"
+        android:inputType="phone"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EmargencyNumber_2"
+        android:layout_width="261dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="8dp"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/buttonEmar"
+        android:layout_width="296dp"
+        android:layout_height="289dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_crircle"
+        android:backgroundTint="@color/white"
+        android:onClick="btn_sender"
+        android:text="জরুরি"
+        android:textStyle="bold"
+        android:textColor="#E74C3C"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.268"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</android.support.constraint.ConstraintLayout>
