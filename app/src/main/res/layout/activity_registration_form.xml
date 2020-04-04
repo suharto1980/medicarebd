@@ -187,9 +187,9 @@
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/inputBloodGroup"
-        android:layout_width="381dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="32dp"
+        android:layout_width="369dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
         android:layout_marginTop="12dp"
         app:errorEnabled="true"
         app:layout_constraintStart_toStartOf="parent"
@@ -197,8 +197,8 @@
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/inputBloodGroup2"
-            android:layout_width="match_parent"
-            android:layout_height="51dp"
+            android:layout_width="398dp"
+            android:layout_height="52dp"
             android:drawableLeft="@drawable/blood_drop"
             android:hint="  রক্তের গ্রুপ"
             android:inputType="text"

@@ -41,7 +41,7 @@ public class Home_Page extends AppCompatActivity  implements View.OnClickListene
 
     }
 
-    public void onClick(View v){
+      public void onClick(View v){
 
         Intent intent;
 
@@ -61,7 +61,7 @@ public class Home_Page extends AppCompatActivity  implements View.OnClickListene
              }
              case R.id.optionCurrentInfo:{
 
-                 intent=new Intent(this,Current_medi_info.class);
+                 intent=new Intent(this,BasicInfoActivity.class);
                  startActivity(intent);
                  break;
              }

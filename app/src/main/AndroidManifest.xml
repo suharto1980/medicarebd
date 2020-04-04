@@ -15,11 +15,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PrescriptionView"></activity>
-        <activity android:name=".Prescription"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".EditUserProfile"
-            android:parentActivityName=".UserProfile"/>
+        <activity android:name=".BasicInfoActivity"></activity>
+        <activity android:name=".OtpActivity"
+            android:parentActivityName=".Login" />
+        <activity android:name=".Register_Activity" />
+        <activity android:name=".PrescriptionView" />
+        <activity
+            android:name=".Prescription"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".EditUserProfile"
+            android:parentActivityName=".UserProfile" />
         <activity
             android:name=".UserProfile"
             android:parentActivityName=".MainActivity" />

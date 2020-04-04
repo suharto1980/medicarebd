@@ -23,10 +23,10 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="27dp"
+            android:layout_marginStart="25dp"
             android:layout_marginTop="38dp"
-
             android:layout_marginEnd="203dp"
+
             android:text="সাইন ইন"
             android:textColor="@color/textcolor"
             android:textSize="40dp"
@@ -37,11 +37,17 @@
         android:id="@+id/inputMobile"
         android:layout_width="369dp"
         android:layout_height="60dp"
-        android:layout_marginStart="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="50dp"
+        android:layout_marginEnd="5dp"
         app:errorEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3">
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3"
+        app:layout_constraintVertical_bias="0.009">
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/inputMobile2"
@@ -58,13 +64,19 @@
         android:id="@+id/inputPassword"
         android:layout_width="369dp"
         android:layout_height="60dp"
-        android:layout_marginStart="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
         app:errorEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.009"
         app:layout_constraintTop_toBottomOf="@+id/inputMobile"
-       app:passwordToggleEnabled="true"
-        >
+       app:passwordToggleEnabled="true">
+
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/inputPassword2"
@@ -80,16 +92,25 @@
 
     <ImageButton
         android:id="@+id/buttonSignIn"
-        android:layout_width="376dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="88dp"
-        android:background="@color/actoinbar3"
-        android:text="Button"
-
-        android:textColor="@color/white"
+        android:layout_width="320dp"
+        android:layout_height="47dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="80dp"
+        android:background="@color/textcolor"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@color/cardview_dark_background"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputPassword"
+        app:layout_constraintVertical_bias="0.022"
         app:srcCompat="@drawable/right_arrow" />
 
 
@@ -97,28 +118,40 @@
         android:id="@+id/textNewAccount"
         android:layout_width="363dp"
         android:layout_height="48dp"
-        android:layout_marginStart="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
         android:text=" নতুন অ্যাকাউন্ট খুলুন "
         android:textAlignment="center"
+        android:textColor="@color/textcolor"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:textColor="@color/textcolor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSignIn" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonSignIn"
+        app:layout_constraintVertical_bias="0.113" />
 
     <TextView
         android:id="@+id/textForgetpassword"
         android:layout_width="363dp"
         android:layout_height="48dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="50dp"
         android:text="পাসওয়ার্ড ভুলে গেছেন?"
         android:textAlignment="center"
-        android:textSize="20dp"
         android:textColor="@color/textcolor"
+        android:textSize="20dp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textNewAccount" />
+        app:layout_constraintTop_toBottomOf="@+id/textNewAccount"
+        app:layout_constraintVertical_bias="0.018" />
 
 
 
