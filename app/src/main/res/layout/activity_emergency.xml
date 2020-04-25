@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#283747"
+    android:background="@color/white"
     tools:context=".Emergency">
 
 
@@ -16,10 +16,9 @@
         android:layout_marginTop="136dp"
         android:layout_marginEnd="8dp"
         android:hint="Phone Number"
-        android:textColorHint="@color/white"
         android:inputType="phone"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="#283747"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.033"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,8 +34,7 @@
         android:hint="Phone Number"
         android:inputType="phone"
         android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
+        android:textColor="#283747"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.033"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,15 +49,14 @@
         android:layout_marginTop="336dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/button_crircle"
-        android:backgroundTint="@color/white"
         android:onClick="btn_sender"
         android:text="জরুরি"
-        android:textStyle="bold"
-        android:textColor="#E74C3C"
+        android:textColor="#FDFEFE"
         android:textSize="50dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
 
-        app:layout_constraintHorizontal_bias="0.268"
+        app:layout_constraintHorizontal_bias="0.322"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
