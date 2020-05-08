@@ -11,6 +11,16 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
 public class UserProfile extends AppCompatActivity  implements View.OnClickListener {
 
     private ImageButton imageButton ;
@@ -73,8 +83,8 @@ public class UserProfile extends AppCompatActivity  implements View.OnClickListe
 
             }
 
+        getData();
         }
-
 
 
     public void onClick(View v){
@@ -93,6 +103,37 @@ public class UserProfile extends AppCompatActivity  implements View.OnClickListe
 
         }
 
+    }
+
+   //for data read from API
+    private void getData(){
+        String URL="http://suharto1980-001-site1.ftempurl.com/api/PatientsApi/{id}"+DataHolder.pid;
+
+
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
+
+
+
+        //method
+        JsonObjectRequest jsonObjectRequest=new JsonObjectRequest(Request.Method.GET, URL, null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                try {
+                    String Name=response.getString("pname");
+                    System.out.println("Data "+Name);
+                    showName.setText(Name);
+                }catch (Exception ex){
+                    System.out.println("Data not send"+ex);
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                System.out.println( "ERROR"+error);
+            }
+        });
+
+        requestQueue.add(jsonObjectRequest);
     }
 }
 
